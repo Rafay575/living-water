@@ -1,0 +1,28 @@
+/* components/Footer.css */
+.footer {
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-nav li + li {
+  margin-left: 1.5rem;
+}
+
+.footer-nav a {
+  color: #343a40;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-nav a:hover {
+  color: #007bff;
+}
+
+.footer-social a {
+  margin-left: 1rem;
+  color: #343a40;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #007bff;
+}

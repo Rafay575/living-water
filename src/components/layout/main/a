@@ -1,0 +1,101 @@
+"use client";
+import Image from "next/image";
+
+
+
+export default function FeaturesSection() {
+  // Example features data
+  const leftFeatures = [
+    {
+      title: "Zero Sugar",
+      description: "No refined sugar, just pure, guilt-free hydration.",
+      icon: "0g", // or an image/icon if you prefer
+    },
+    {
+      title: "Electrolyte-Powered",
+      description: "Packed with essential electrolytes that keep you fueled and energized.",
+      icon: "⚡",
+    },
+    // {
+    //   title: "Natural Flavors",
+    //   description: "No artificial additives. Real fruit extracts for a true burst of flavor.",
+    //   icon: "🍊",
+    // },
+  ];
+
+  const rightFeatures = [
+    {
+      title: "Vitamin D",
+      description: "Because your body deserves the nutrients even when the sun isn’t out.",
+      icon: "☀️",
+    },
+    {
+      title: "No Caffeine",
+      description: "Hydration that keeps you feeling fresh, minus the restless breakdown feeling.",
+      icon: "🚫",
+    },
+    // {
+    //   title: "No Carbonation",
+    //   description: "Smooth, still hydration, so you can enjoy it anytime, anywhere.",
+    //   icon: "💧",
+    // },
+  ];
+
+  return (
+    <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Three columns on md and up; single column on smaller screens */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+          {/* Left Features */}
+          <div className="flex flex-col  lg:col-span-1 space-y-8">
+            {leftFeatures.map((feature, index) => (
+              <FeatureBubble key={index} feature={feature} />
+            ))}
+          </div>
+
+          {/* Center Text + Splash Image */}
+          <div className="relative w-full  lg:col-span-2 h-96 mx-auto">
+      {/* Splash Image */}
+      <Image
+        src="/images/splashes.png" // Update path to your splash image
+        alt="Water Splashes"
+        fill
+        className="object-contain"
+        priority
+      />
+
+      {/* Text Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center px-4">
+          Flavor You Crave, and Hydration You Deserve!
+        </h2>
+      </div>
+    </div>
+
+          {/* Right Features */}
+          <div className="flex flex-col  lg:col-span-1 space-y-8">
+            {rightFeatures.map((feature, index) => (
+              <FeatureBubble key={index} feature={feature} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * A simple reusable component for the feature “bubbles”
+ * You can customize the shape, icons, and text layout as needed.
+ */function FeatureBubble({ feature }) {
+  return (
+    <div className="flex flex-col items-center justify-center text-center w-56 xl:w-72  h-56 xl:h-72 mx-auto border-2 border-black rounded-full shadow-lg shadow-[#000] p-4">
+      {/* Circle Icon/Placeholder */}
+      <div className="w-16 h-16 rounded-full bg-gray-200 text-black flex items-center justify-center mb-2 text-xl">
+        {feature.icon}
+      </div>
+      <h3 className="font-semibold text-gray-900 text-lg">{feature.title}</h3>
+      <p className="text-sm text-gray-600">{feature.description}</p>
+    </div>
+  );
+}
