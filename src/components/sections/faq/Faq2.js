@@ -10,7 +10,7 @@ const Faq2 = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title-area ltn__section-title-2 text-center">
-              <h1 className="section-title white-color---">Some Questions</h1>
+              <h1 className="section-title white-color---">Frequently Asked Questions</h1>
             </div>
           </div>
         </div>
@@ -18,7 +18,7 @@ const Faq2 = () => {
           <div className="col-lg-6">
             <div className="ltn__faq-inner ltn__faq-inner-2">
               <div id="accordion_2">
-                {/* <!-- card --> */}
+                {/* Card 1 */}
                 <div className="card">
                   <h6
                     className="collapsed ltn__card-title"
@@ -26,7 +26,7 @@ const Faq2 = () => {
                     data-bs-target="#faq-item-2-1"
                     aria-expanded="false"
                   >
-                    How to buy a product?
+                    Where does Living Water come from?
                   </h6>
                   <div
                     id="faq-item-2-1"
@@ -35,17 +35,13 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Scelerisque eleifend donec pretium
-                        vulputate sapien nec sagittis. Proin libero nunc
-                        consequat interdum. Condimentum lacinia quis vel eros
-                        donec ac.
+                        Our water originates from natural volcanic springs in Costa Rica, where it's filtered naturally through layers of ancient lava rock. This unique filtration process ensures it's completely pure and chemical-free.
                       </p>
                     </div>
                   </div>
                 </div>
-                {/* <!-- card --> */}
+
+                {/* Card 2 */}
                 <div className="card">
                   <h6
                     className="ltn__card-title"
@@ -53,7 +49,7 @@ const Faq2 = () => {
                     data-bs-target="#faq-item-2-2"
                     aria-expanded="true"
                   >
-                    How can i make refund from your website?
+                    What makes Living Water special?
                   </h6>
                   <div
                     id="faq-item-2-2"
@@ -61,31 +57,15 @@ const Faq2 = () => {
                     data-bs-parent="#accordion_2"
                   >
                     <div className="card-body">
-                      <div className="ltn__video-img alignleft">
-                        <Image
-                          style={{ height: "auto" }}
-                          src="/img/bg/17.jpg"
-                          alt="video popup bg image"
-                          width={220}
-                          height={140}
-                        />
-                        <Link
-                          className="ltn__video-icon-2 ltn__video-icon-2-small ltn__video-icon-2-border----"
-                          href="https://www.youtube.com/embed/LjCzPp-MK48?autoplay=1&showinfo=0"
-                          data-rel="lightcase:myCollection"
-                        >
-                          <i className="fa fa-play"></i>
-                        </Link>
-                      </div>
+                    
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Scelerisque{" "}
+                        Living Water is uniquely enriched by minerals from volcanic rock, offering unmatched purity and natural health benefits. No additives or artificial processes are involved.
                       </p>
                     </div>
                   </div>
                 </div>
-                {/* <!-- card --> */}
+
+                {/* Card 3 */}
                 <div className="card">
                   <h6
                     className="collapsed ltn__card-title"
@@ -93,7 +73,7 @@ const Faq2 = () => {
                     data-bs-target="#faq-item-2-3"
                     aria-expanded="false"
                   >
-                    I am a new user. How should I start?
+                    Are there any chemicals or additives?
                   </h6>
                   <div
                     id="faq-item-2-3"
@@ -102,17 +82,13 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Scelerisque eleifend donec pretium
-                        vulputate sapien nec sagittis. Proin libero nunc
-                        consequat interdum. Condimentum lacinia quis vel eros
-                        donec ac.
+                        Absolutely not! Living Water is completely natural. It undergoes a natural purification process through volcanic rock, ensuring no chemicals or additives are ever used.
                       </p>
                     </div>
                   </div>
                 </div>
-                {/* <!-- card --> */}
+
+                {/* Card 4 */}
                 <div className="card">
                   <h6
                     className="collapsed ltn__card-title"
@@ -120,7 +96,7 @@ const Faq2 = () => {
                     data-bs-target="#faq-item-2-4"
                     aria-expanded="false"
                   >
-                    Returns and refunds
+                    How can I order Living Water?
                   </h6>
                   <div
                     id="faq-item-2-4"
@@ -129,17 +105,13 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Scelerisque eleifend donec pretium
-                        vulputate sapien nec sagittis. Proin libero nunc
-                        consequat interdum. Condimentum lacinia quis vel eros
-                        donec ac.
+                        Simply visit our online shop, select your preferred pack size, and place your order securely. We ensure prompt and safe delivery straight to your doorstep.
                       </p>
                     </div>
                   </div>
                 </div>
-                {/* <!-- card --> */}
+
+                {/* Card 5 */}
                 <div className="card">
                   <h6
                     className="collapsed ltn__card-title"
@@ -147,7 +119,7 @@ const Faq2 = () => {
                     data-bs-target="#faq-item-2-5"
                     aria-expanded="false"
                   >
-                    Are my details secured?
+                    Is Living Water sustainable?
                   </h6>
                   <div
                     id="faq-item-2-5"
@@ -156,16 +128,7 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Scelerisque eleifend donec pretium
-                        vulputate sapien nec sagittis. Proin libero nunc
-                        consequat interdum. Condimentum lacinia quis vel eros
-                        donec ac. Mauris sit amet massa vitae tortor. Quisque id
-                        diam vel quam elementum pulvinar. Gravida in fermentum
-                        et sollicitudin ac orci phasellus. Facilisis gravida
-                        neque convallis a cras semper. Non arcu risus quis
-                        varius quam quisque id.
+                        Yes! We are committed to sustainability and responsible sourcing. Our volcanic springs are protected, and we follow environmentally-friendly practices to preserve nature's balance.
                       </p>
                     </div>
                   </div>
@@ -173,15 +136,16 @@ const Faq2 = () => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-6">
             <aside className="sidebar-area ltn__right-sidebar mt-60">
-              {/* <!-- Banner Widget --> */}
+              {/* Banner Widget */}
               <div className="widget ltn__banner-widget">
                 <Link href="/shop">
                   <Image
                     style={{ height: "auto" }}
-                   src="/img/abc.png"
-                    alt="Banner Image"
+                    src="/img/abc.png"
+                    alt="Living Water Promotion"
                     width={631}
                     height={500}
                   />

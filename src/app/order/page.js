@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import PageWrapper from '@/components/shared/wrappers/PageWrapper';
 import HeroPrimary from '@/components/sections/hero-banners/HeroPrimary';
-
+import { baseUrl } from '@/api/baseUrl';
 export default function PurchasesPage() {
   const router = useRouter();
   const token = useSelector(s => s.auth.token);
@@ -24,7 +24,7 @@ export default function PurchasesPage() {
 
   const fetchPurchases = async (page) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/purchase?page=${page}&limit=10`, {
+      const res = await fetch(`${baseUrl}/api/purchase?page=${page}&limit=10`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const result = await res.json();

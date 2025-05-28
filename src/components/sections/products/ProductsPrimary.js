@@ -51,7 +51,7 @@ export default function ProductPage() {
   const onPayCreate = async () => {
     if (!token) { router.push('/login'); return; }
 
-    const res = await fetch('http://localhost:5000/api/purchase/create-order', {
+    const res = await fetch(`${baseUrl}/api/purchase/create-order`, {
       method:  'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ export default function ProductPage() {
   };
 
   const onPayApprove = async data => {
-    const res = await fetch('http://localhost:5000/api/purchase', {
+    const res = await fetch(`${baseUrl}/api/purchase`, {
       method:  'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -1,35 +1,34 @@
 import ServiceCard4 from "@/components/shared/cards/ServiceCard4";
 import React from "react";
 import { BiDroplet, BiLeaf } from "react-icons/bi";
-import { FaBirthdayCake } from "react-icons/fa";
-function getAllFeatues() {
+import { FaHeartbeat,FaHandHoldingWater  } from "react-icons/fa";
+ function getAllFeatures() {
   return [
     {
       id: 1,
       title: "100% Natural Filtration",
       desc: "No pumps, no chemicals—just gravity and ancient lava rock.",
-      icon: <BiDroplet size={48} className="text-white" />,
+      icon: <BiDroplet size={48} className="text-black" />,
       path: "/shop",
     },
     {
       id: 2,
       title: "Mineral-Rich",
       desc: "Naturally packed with life-giving minerals for optimal hydration.",
-      icon: <BiLeaf size={48} className="text-white" />,
+      icon: <FaHandHoldingWater  size={48} className="text-black" />,
       path: "/shop",
     },
     {
       id: 3,
       title: "Vibrant Longevity",
       desc: "Inspired by villagers who thrive well past 100 years.",
-      icon: <FaBirthdayCake size={48} className="text-white" />,
+      icon: <FaHeartbeat size={48} className="text-black" />,
       path: "/shop",
     },
-   
   ];
 }
 const Services4 = () => {
-  const services = getAllFeatues()?.filter(({ id }) => id > 26 && id < 30);
+  const services = getAllFeatures();
   return (
     <div className="ltn__feature-area section-bg-1 pt-115 pb-90">
       <div className="container">

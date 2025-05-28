@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import React, { useState } from "react";
-
+import {baseUrl} from "@/api/baseUrl";
 const RegisterPrimary = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState({ type: "", message: "" });
@@ -27,7 +27,7 @@ const RegisterPrimary = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/register', {
+      const res = await fetch(`${baseUrl}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),

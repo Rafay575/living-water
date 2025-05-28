@@ -6,6 +6,7 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import { setCredentials } from "../../../../store/authSlice";
 import { useSelector } from 'react-redux';
+import { baseUrl } from "@/api/baseUrl";
 const LoginPrimary = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert]     = useState({ type: "", message: "" });
@@ -25,7 +26,7 @@ const LoginPrimary = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch(`${baseUrl}/api/auth/login`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify(payload),

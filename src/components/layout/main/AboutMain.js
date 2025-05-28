@@ -16,7 +16,7 @@ const AboutMain = () => {
       <Services4 />
       <Testimonials3 pt="pt-115" />
       <Faq2 />
-      <CallToAction1 />
+     
      
     </main>
   );
