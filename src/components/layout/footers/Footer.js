@@ -15,8 +15,8 @@ export default function Footer() {
             <Image
               src="/img/logo.png"
               alt="Living Water"
-              width={120}
-              height={60}
+              width={100}
+              height={100}
             />
             <h5 className="ms-3 mb-0">Living Water</h5>
           </div>

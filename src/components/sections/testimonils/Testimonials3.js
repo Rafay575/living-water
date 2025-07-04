@@ -1,10 +1,50 @@
 import TestimonialCard2 from "@/components/shared/cards/TestimonialCard2";
 import getAllTestimonials from "@/libs/getAllTestimonials";
+const testimonials = [
+  {
+    id: 1,
+    name: "Ainias Smith",
+    image: "/img/testimonial/1.jpeg",
+    imageSmall: "/img/testimonial/1.jpeg",
+    desig: "Wide Receiver, Philadelphia Eagles",
+    desc: "This platform has transformed how I train off-season. The guidance is top-notch."
+  },
+  {
+    id: 2,
+    name: "Layden Robinson",
+    image: "/img/testimonial/2.jpeg",
+    imageSmall: "/img/testimonial/2.jpeg",
+    desig: "Guard, New England Patriots",
+    desc: "I appreciate the seamless experience and the dedication of the coaching staff."
+  },
+  {
+    id: 3,
+    name: "Jalyx Hunt",
+    image: "/img/testimonial/3.jpeg",
+    imageSmall: "/img/testimonial/3.jpeg",
+    desig: "Linebacker, Philadelphia Eagles",
+    desc: "Their attention to detail and personalized feedback have taken my game to the next level."
+  },
+  {
+    id: 4,
+    name: "Isiah Spiller",
+    image: "/img/testimonial/4.jpeg",
+    imageSmall: "/img/testimonial/4.jpeg",
+    desig: "Running Back, Los Angeles Chargers",
+    desc: "I’ve never felt more prepared for each game thanks to these insights."
+  },
+  {
+    id: 5,
+    name: "Lean O'Neal Jr",
+    image: "/img/testimonial/5.jpeg",
+    imageSmall: "/img/testimonial/5.jpeg",
+    desig: "Safety, San Francisco 49ers",
+    desc: "The support and resources provided are unparalleled in the league."
+  }
+];
 
 const Testimonials3 = ({ pt }) => {
-  const testimonials = getAllTestimonials()?.filter(
-    ({ id }) => id > 10 && id < 16
-  );
+  
   return (
     <div
       className={`ltn__testimonial-area section-bg-1   pb-70 ${
@@ -19,7 +59,7 @@ const Testimonials3 = ({ pt }) => {
                 {"//"} Testimonials
               </h6>
               <h1 className="section-title">
-                Clients Feedbacks<span>.</span>
+                NFLPlayers<span>.</span>
               </h1>
             </div>
           </div>

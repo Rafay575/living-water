@@ -33,9 +33,7 @@ export default function PromoSection() {
             {/* Circle Container */}
             <div className="promo-circle-container relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-white rounded-full shadow-lg shadow-[#000] overflow-hidden">
               {/* "VOLCANICALLY PURE" Badge */}
-              <div className="promo-flavor-badge absolute top-4 pl-20 left-8 z-20 bg-red-600 text-white text-xs md:text-sm font-semibold px-3 py-1 rounded-full">
-                VOLCANICALLY PURE
-              </div>
+             
               
               {/* Main Product Image */}
               <Image

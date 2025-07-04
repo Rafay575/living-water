@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import dynamic from 'next/dynamic';
-
+import {baseUrl} from '@/api/baseUrl';
 /* ────────── lazy-load PayPal (no markup on the server) ────────── */
 const PayPalScriptProvider = dynamic(
   () => import('@paypal/react-paypal-js').then(m => m.PayPalScriptProvider),

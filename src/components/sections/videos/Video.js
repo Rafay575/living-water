@@ -11,13 +11,14 @@ const Video = () => {
               className="ltn__video-bg-img ltn__video-popup-height-600  bg-image"
               data-bs-bg={"/img/hero.jpg"}
             >
-              <Link
+              {/* <Link
                 className="ltn__video-icon-2 ltn__video-icon-2-border"
-                href="https://www.youtube.com/embed/ATI7vfCgwXE?autoplay=1&showinfo=0"
+                href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0"
                 data-rel="lightcase:myCollection"
+                 disabled="true"
               >
                 <i className="fa fa-play"></i>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
