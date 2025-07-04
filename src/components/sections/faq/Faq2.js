@@ -10,7 +10,9 @@ const Faq2 = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title-area ltn__section-title-2 text-center">
-              <h1 className="section-title white-color---">Frequently Asked Questions</h1>
+              <h1 className="section-title white-color---">
+                Frequently Asked Questions
+              </h1>
             </div>
           </div>
         </div>
@@ -35,7 +37,11 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Our water originates from natural volcanic springs in Costa Rica, where it's filtered naturally through layers of ancient lava rock. This unique filtration process ensures it's completely pure and chemical-free.
+                        Our water originates from natural volcanic springs in
+                        Costa Rica, where it&apos;s filtered naturally through
+                        layers of ancient lava rock. This unique filtration
+                        process ensures it&apos;s completely pure and
+                        chemical-free.
                       </p>
                     </div>
                   </div>
@@ -57,9 +63,11 @@ const Faq2 = () => {
                     data-bs-parent="#accordion_2"
                   >
                     <div className="card-body">
-                    
                       <p>
-                        Living Water is uniquely enriched by minerals from volcanic rock, offering unmatched purity and natural health benefits. No additives or artificial processes are involved.
+                        Living Water is uniquely enriched by minerals from
+                        volcanic rock, offering unmatched purity and natural
+                        health benefits. No additives or artificial processes
+                        are involved.
                       </p>
                     </div>
                   </div>
@@ -82,7 +90,10 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Absolutely not! Living Water is completely natural. It undergoes a natural purification process through volcanic rock, ensuring no chemicals or additives are ever used.
+                        Absolutely not! Living Water is completely natural. It
+                        undergoes a natural purification process through
+                        volcanic rock, ensuring no chemicals or additives are
+                        ever used.
                       </p>
                     </div>
                   </div>
@@ -105,7 +116,9 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Simply visit our online shop, select your preferred pack size, and place your order securely. We ensure prompt and safe delivery straight to your doorstep.
+                        Simply visit our online shop, select your preferred pack
+                        size, and place your order securely. We ensure prompt
+                        and safe delivery straight to your doorstep.
                       </p>
                     </div>
                   </div>
@@ -128,7 +141,10 @@ const Faq2 = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Yes! We are committed to sustainability and responsible sourcing. Our volcanic springs are protected, and we follow environmentally-friendly practices to preserve nature's balance.
+                        Yes! We are committed to sustainability and responsible
+                        sourcing. Our volcanic springs are protected, and we
+                        follow environmentally-friendly practices to preserve
+                        nature&apos;s balance.
                       </p>
                     </div>
                   </div>
