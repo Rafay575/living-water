@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST='{"components\\\\sections\\\\products\\\\ProductsPrimary.js -> @paypal/react-paypal-js":{"id":1542,"files":["static/chunks/542-ae0d433f302c1941.js"]}}';

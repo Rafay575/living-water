@@ -6870,7 +6870,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 10px 0 30px;
+    margin: 10px 0 ;
   }
   .ltn__header-4 .ltn__header-options,
   .ltn__header-5 .ltn__header-options {
@@ -16086,7 +16086,9 @@ input.cart-plus-minus-box {
   width: 100%;
   height: 100%;
 }
-
+ .height-custom{
+  height: 250px;
+ }
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .promo-title {
@@ -16102,5 +16104,11 @@ input.cart-plus-minus-box {
     left: 1rem;
     top: 2rem;
   }
+   .height-custom{
+  height: 400px;
+ }
 }
 /* Footer Styles */
+
+
+

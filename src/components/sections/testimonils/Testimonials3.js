@@ -1,5 +1,14 @@
 import TestimonialCard2 from "@/components/shared/cards/TestimonialCard2";
 import getAllTestimonials from "@/libs/getAllTestimonials";
+const randomizedDescs = [
+  "Can't even begin to say how great this water is, The colder it is the tastier and more boost it gives. Can't Explain it, but hell it awesome",
+  "When I tried this one day in the morning before training the kids, I had to grab 10 more... They say not to over hydrate, but this well I drank it all",
+  "During Coaching Kids in Houston Tx, this water revitalized me in the southern Heat, it is FANTASTIC!!!",
+  "This water has helped me improve my off-seasons training by boosting my energy!",
+  "I drank a few of the bottles throughout the day and I did not have sore muscles after training or in the morning."
+];
+
+// Static assignment of randomized descriptions
 const testimonials = [
   {
     id: 1,
@@ -7,7 +16,7 @@ const testimonials = [
     image: "/img/testimonial/1.jpeg",
     imageSmall: "/img/testimonial/1.jpeg",
     desig: "Wide Receiver, Philadelphia Eagles",
-    desc: "This platform has transformed how I train off-season. The guidance is top-notch."
+    desc: randomizedDescs[0]
   },
   {
     id: 2,
@@ -15,7 +24,7 @@ const testimonials = [
     image: "/img/testimonial/2.jpeg",
     imageSmall: "/img/testimonial/2.jpeg",
     desig: "Guard, New England Patriots",
-    desc: "I appreciate the seamless experience and the dedication of the coaching staff."
+    desc: randomizedDescs[1]
   },
   {
     id: 3,
@@ -23,7 +32,7 @@ const testimonials = [
     image: "/img/testimonial/3.jpeg",
     imageSmall: "/img/testimonial/3.jpeg",
     desig: "Linebacker, Philadelphia Eagles",
-    desc: "Their attention to detail and personalized feedback have taken my game to the next level."
+    desc: randomizedDescs[2]
   },
   {
     id: 4,
@@ -31,7 +40,7 @@ const testimonials = [
     image: "/img/testimonial/4.jpeg",
     imageSmall: "/img/testimonial/4.jpeg",
     desig: "Running Back, Los Angeles Chargers",
-    desc: "I’ve never felt more prepared for each game thanks to these insights."
+    desc: randomizedDescs[3]
   },
   {
     id: 5,
@@ -39,9 +48,10 @@ const testimonials = [
     image: "/img/testimonial/5.jpeg",
     imageSmall: "/img/testimonial/5.jpeg",
     desig: "Safety, San Francisco 49ers",
-    desc: "The support and resources provided are unparalleled in the league."
+    desc: randomizedDescs[4]
   }
 ];
+
 
 const Testimonials3 = ({ pt }) => {
   
@@ -56,7 +66,7 @@ const Testimonials3 = ({ pt }) => {
           <div className="col-lg-12">
             <div className="section-title-area ltn__section-title-2 text-center">
               <h6 className="section-subtitle ltn__secondary-color">
-                {"//"} Testimonials
+               Testimonials
               </h6>
               <h1 className="section-title">
                 NFLPlayers<span>.</span>

@@ -122,6 +122,12 @@ export default function ProductPage() {
               className="rounded"
             />
           </div>
+          <p className="mt-3 text-muted fw-semibold text-center">
+  <span className="text-danger">⚠️ Limited units available!</span> Don’t miss your chance — 
+  <strong>pre-orders will begin immediately</strong> once the promo quantity runs out. <br />
+  Be the first to grab yours and experience the freshness! 💧
+</p>
+
         </div>
 
         {/* ─────────── details + form ─────────── */}

@@ -4,7 +4,7 @@ import React from "react";
 const TestimonialCard2 = ({ testimonial }) => {
   const { name, image, desc, desig } = testimonial;
   return (
-    <div className="ltn__testimonial-item ltn__testimonial-item-4">
+    <div className="ltn__testimonial-item ltn__testimonial-item-4 height-custom">
       <div className="ltn__testimoni-img">
         <Image src={image} alt="#" priority={false} height={400} width={400} />
       </div>

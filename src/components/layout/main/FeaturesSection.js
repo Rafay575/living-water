@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import NextImage from "next/image";
 
 export default function FeaturesSection() {
   // Living Water features
@@ -30,7 +30,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="features-section">
+    <section className="features-section-1">
       <div className="container">
         <div className="features-grid">
           {/* Left Features */}
@@ -42,13 +42,23 @@ export default function FeaturesSection() {
 
           {/* Center Text + Splash Image */}
           <div className="feature-image">
-            <Image
-              src="/img/splashes.png" // your splash image
-              alt="Lava-filtered spring water"
-              layout="fill"
-              className="image"
-              priority
-            />
+         <div style={{ position: 'relative', width: '100%', height: '500px', overflow: 'hidden' }}>
+  <img
+    src="/img/s.png"
+    alt="Lava-filtered spring water"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      objectPosition: 'center'
+    }}
+  />
+</div>
+
+
             <div className="image-overlay">
               <h2 className="image-text">
                 Pure, Lava-Filtered <br /> Mineral Water

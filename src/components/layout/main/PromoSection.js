@@ -1,5 +1,5 @@
 "use client"; // If using Next.js 13+ App Router
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 
 export default function PromoSection() {
@@ -31,19 +31,28 @@ export default function PromoSection() {
           {/* Right Column */}
           <div className="promo-right flex justify-center md:justify-end">
             {/* Circle Container */}
-            <div className="promo-circle-container relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-white rounded-full shadow-lg shadow-[#000] overflow-hidden">
-              {/* "VOLCANICALLY PURE" Badge */}
-             
-              
-              {/* Main Product Image */}
-              <Image
-                src="/img/hero.jpg"
-                alt="Living Water bottle"
-                fill
-                className="promo-product-image object-contain"
-                priority
-              />
-            </div>
+     <div
+  style={{
+    position: 'relative',
+    width: '300px',
+    height: '300px',
+    borderRadius: '9999px', // makes it a circle
+    overflow: 'hidden'
+  }}
+>
+  <img
+    src="/img/hero.jpg"
+    alt="Living Water bottle"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      objectPosition: 'center'
+    }}
+  />
+</div>
+
+
           </div>
 
         </div>
