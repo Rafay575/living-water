@@ -32,6 +32,57 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning={true}
       className={`${rajdhani.variable} ${open_sans.variable}`}
     >
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/img/favicon.png" />
+
+        {/* Basic page info */}
+        <title>Living Water | Pure Lava‑Filtered Mineral Water</title>
+        <meta
+          name="description"
+          content="Living Water delivers pure, lava‑filtered mineral water sourced from Costa Rica’s volcanic springs. 100% natural filtration, mineral‑rich hydration, and eco‑conscious packaging. Free shipping on orders over $100."
+        />
+        <meta
+          name="keywords"
+          content="lava‑filtered water, mineral water, natural spring water, eco-conscious hydration, Costa Rica water, pure hydration"
+        />
+        <meta name="author" content="Living Water" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Mobile viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Living Water | Pure Lava‑Filtered Mineral Water"
+        />
+        <meta
+          property="og:description"
+          content="Experience 100% natural filtration and mineral‑rich hydration from Costa Rica’s protected volcanic springs. Shop now and enjoy free shipping on orders over $100."
+        />
+        <meta property="og:url" content="https://livingwater-bt.com/" />
+        <meta
+          property="og:image"
+          content="https://livingwaterbt.com/img/og-image.jpg"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Living Water | Pure Lava‑Filtered Mineral Water"
+        />
+        <meta
+          name="twitter:description"
+          content="Pure, lava‑filtered mineral water packed with life‑giving minerals. Sustainably sourced from Costa Rica's volcanic springs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://livingwaterbt.com/img/twitter-card.jpg"
+        />
+      </head>
       <body className={open_sans.className}>
     
       <Provider store={store}> 

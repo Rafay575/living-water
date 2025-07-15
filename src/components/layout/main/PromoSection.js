@@ -20,12 +20,14 @@ export default function PromoSection() {
             </p>
 
             {/* Buttons */}
-            <div className="promo-buttons flex flex-wrap gap-4 mb-8">
-              <Link className="promo-btn-primary px-5 py-2 rounded-full bg-black text-white hover:bg-gray-800 transition-colors" href="/shop">
-                ORDER NOW
-              </Link>
-            
-            </div>
+            <div className="btn-wrapper animated">
+                <Link
+                  href="/shop"
+                  className="theme-btn-1 text-uppercase btn btn-effect-1"
+                >
+                  Order Now
+                </Link>
+              </div>
           </div>
           
           {/* Right Column */}

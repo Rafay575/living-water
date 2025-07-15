@@ -96,26 +96,7 @@ const ShopMain = ({ title, isSidebar, text, currentTapId }) => {
   return (
     <main>
       <HeroPrimary
-        title={
-          category
-            ? `Category: ${makeText(category)}`
-            : brand
-            ? `Brand: ${makeText(brand)}`
-            : size
-            ? `Product Size: ${makeText(size)}`
-            : tag
-            ? `Tag: ${makeText(tag)}`
-            : color
-            ? `Product  Color: ${makeText(color)}`
-            : search
-            ? `Search: ${makeText(search)}`
-            : title
-            ? title
-            : "Shop"
-        }
-        text={text ? text : "Shop"}
-        type={isSidebar === "primary" ? 2 : 3}
-        isCapitalize={brand ? true : false}
+        title={"Purchase"} text="Purchase"
       />
       <CommonContext
         value={{

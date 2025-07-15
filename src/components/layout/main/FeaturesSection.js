@@ -30,7 +30,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="features-section-1">
+    <section className="features-section-1" style={{padding: '20px 0px'}}>
       <div className="container">
         <div className="features-grid">
           {/* Left Features */}

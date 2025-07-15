@@ -52,13 +52,25 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="row">
-          <div className="col text-center text-muted small">
-            <p className="mb-1">Protected Spring • Costa Rica</p>
-            <p className="mb-0">
-              © {new Date().getFullYear()} Living Water. All rights reserved.
-            </p>
-          </div>
-        </div>
+  <div className="col text-center text-muted small">
+    <p className="mb-1">Protected Spring • Costa Rica</p>
+    <p className="mb-0">
+      © {new Date().getFullYear()} Living Water. All rights reserved.
+    </p>
+    <p className="mt-1">
+      Powered by{' '}
+      <a
+        href="https://musttechsolutions.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-muted"
+      >
+        MustTech Solutions
+      </a>
+    </p>
+  </div>
+</div>
+
       </div>
     </footer>
   );

@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: 'Home',     path: '/',       dropdown: null },
     { name: 'About',    path: '/about',  dropdown: null },
     { name: 'Purchase', path: '/shop',   dropdown: null },
+    { name: 'Testimonials', path: '/testimonials',   dropdown: null },
     { name: 'Contact',  path: '/contact',dropdown: null },
   ];
 

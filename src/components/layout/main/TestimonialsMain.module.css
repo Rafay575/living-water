@@ -1,0 +1,147 @@
+/* TestimonialsMain.module.css */
+
+/* Connector dot on the center line */
+.item::before {
+  /* was: background: #4F46E5; */
+  background: #2A486F;
+}
+
+/* Quote mark color */
+.quote::before {
+  /* was: color: #4F46E5; */
+  color: #2A486F;
+}
+
+/* New: section heading & subheading */
+.heading {
+  font-size: 2.25rem;      /* ~text-4xl */
+  font-weight: 700;
+  color: #2A486F;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.subheading {
+  font-size: 1.125rem;     /* ~text-lg */
+  color: #6B7280;          /* Gray-500 */
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+
+/* …rest of your existing CSS… */
+
+.container {
+  position: relative;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Vertical center line */
+.container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Row wrapper */
+.item {
+  position: relative;
+  width: calc(50% - 2rem);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform .2s, box-shadow .2s;
+  margin-bottom: 4rem;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Connector dot on the center line */
+.item::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  width: 16px;
+  height: 16px;
+  background: #2A486F; /* Indigo-600 */
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+/* Left items sit to the left of the line */
+.left {
+  left: 0;
+}
+.left::before {
+  right: -8px; /* half of dot width */
+}
+
+/* Right items sit to the right of the line */
+.right {
+  left: 50%;
+}
+.right::before {
+  left: -8px;
+}
+
+/* Content inside card */
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.role {
+  font-size: 0.875rem;
+  color: #6B7280; /* Gray-500 */
+}
+
+/* Quote styling with icon */
+.quote {
+  position: relative;
+  color: #374151; /* Gray-700 */
+  font-style: italic;
+  padding-left: 2rem;
+}
+.quote::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -0.25rem;
+  font-size: 2rem;
+  color: #4F46E5;
+}
+
+/* Responsive: stack full-width on small */
+@media (max-width: 768px) {
+  .container::before { left: 1rem; }
+  .item,
+  .right,
+  .left {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 3rem;
+  }
+  .item::before { left: 1rem; }
+}

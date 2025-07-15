@@ -32,7 +32,7 @@ const Hero1 = () => {
           <div className="slide-item-img">
             <Image
               priority={false}
-              src="/img/abc.png"
+              src="/img/1.png"
               alt="Lava-filtered spring water"
               width={2000}
               height={2000}
@@ -78,7 +78,7 @@ const Hero1 = () => {
           <div className="slide-item-img slide-img-left">
             <Image
               priority={false}
-              src="/img/abc.png"
+              src="/img/favicon.png"
               alt="Living Water branded bottle"
               width={2000}
               height={2000}

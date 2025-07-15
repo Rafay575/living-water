@@ -1,5 +1,7 @@
 import TestimonialCard2 from "@/components/shared/cards/TestimonialCard2";
-import getAllTestimonials from "@/libs/getAllTestimonials";
+import Link from "next/link";
+
+
 const randomizedDescs = [
   "Can't even begin to say how great this water is, The colder it is the tastier and more boost it gives. Can't Explain it, but hell it awesome",
   "When I tried this one day in the morning before training the kids, I had to grab 10 more... They say not to over hydrate, but this well I drank it all",
@@ -81,6 +83,14 @@ const Testimonials3 = ({ pt }) => {
             </div>
           ))}
         </div>
+         <div className="btn-wrapper animated " style={{ textAlign: "center" }}>
+                <Link
+                  href="/testimonials"
+                  className="theme-btn-1 text-uppercase btn btn-effect-1"
+                >
+                  View More
+                </Link>
+              </div>
       </div>
     </div>
   );
