@@ -10,7 +10,7 @@ const Hero1 = () => {
   <div className="ltn__slide-item-inner">
     <div className="container">
       <div className="row">
-        <div className="col-lg-12 align-self-center">
+        <div className="col-lg-12 align-self-center" style={{ marginTop: "15px" }}>
           <div className="slide-item-info">
             <div className="slide-item-info-inner ltn__slide-animation">
               <h6 className="slide-sub-title animated">
@@ -49,7 +49,7 @@ const Hero1 = () => {
   <div className="ltn__slide-item-inner text-right text-end">
     <div className="container">
       <div className="row">
-        <div className="col-lg-12 align-self-center">
+        <div className="col-lg-12 align-self-center" style={{ marginTop: "15px" }}>
           <div className="slide-item-info">
             <div className="slide-item-info-inner ltn__slide-animation">
               <h6 className="slide-sub-title animated">
